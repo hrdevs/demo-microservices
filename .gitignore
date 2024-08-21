@@ -1,0 +1,47 @@
+# .NET Core
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+*.vspscc
+*.vssscc
+.vscode/
+.project
+.DS_Store
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+Generated\
+
+# Build Folders
+[Bb]in/
+[Oo]bj/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+.nuget/
+
+# Backup & Logs
+*.swp
+*.bak
+*.log
+
+# Visual Studio
+.vscode/
+.vs/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Resharper
+_ReSharper*/
+
+# Rider
+.idea/
