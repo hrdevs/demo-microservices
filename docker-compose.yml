@@ -1,0 +1,29 @@
+networks:
+  backend:
+
+services:
+  customerdb:
+    container_name: customer-db
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+        - ACCEPT_EULA=Y
+        - SA_PASSWORD=P@ssword
+    networks:
+        - backend
+    ports:
+        - 8001:1433
+
+  customerwebapi:
+    container_name: customer-api
+    image: ${DOCKER_REGISTRY-}customerwebapi
+    build:
+      context: .
+      dockerfile: CustomerWebApi/Dockerfile
+    networks:
+        - backend
+    ports:
+        - 8002:8080
+    environment:
+        - DB_HOST=customerdb
+        - DB_NAME=customer
+        - DB_SA_PASSWORD=P@ssword 

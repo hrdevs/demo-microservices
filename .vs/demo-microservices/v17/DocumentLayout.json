@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E66D027-3855-48A9-830A-6CA6FF6CBC35}|CustomerWebApi\\CustomerWebApi.csproj|c:\\users\\hp prodesk\\desktop\\projects\\demo-microservices\\customerwebapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E66D027-3855-48A9-830A-6CA6FF6CBC35}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EFDBFE16-7F46-41C9-926F-DA0DDF0EFBC7}|docker-compose.dcproj|c:\\users\\hp prodesk\\desktop\\projects\\demo-microservices\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EFDBFE16-7F46-41C9-926F-DA0DDF0EFBC7}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E66D027-3855-48A9-830A-6CA6FF6CBC35}|CustomerWebApi\\CustomerWebApi.csproj|c:\\users\\hp prodesk\\desktop\\projects\\demo-microservices\\customerwebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0E66D027-3855-48A9-830A-6CA6FF6CBC35}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{0E66D027-3855-48A9-830A-6CA6FF6CBC35}|CustomerWebApi\\CustomerWebApi.csproj|c:\\users\\hp prodesk\\desktop\\projects\\demo-microservices\\customerwebapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0E66D027-3855-48A9-830A-6CA6FF6CBC35}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E66D027-3855-48A9-830A-6CA6FF6CBC35}|CustomerWebApi\\CustomerWebApi.csproj|c:\\users\\hp prodesk\\desktop\\projects\\demo-microservices\\customerwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E66D027-3855-48A9-830A-6CA6FF6CBC35}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E66D027-3855-48A9-830A-6CA6FF6CBC35}|CustomerWebApi\\CustomerWebApi.csproj|c:\\users\\hp prodesk\\desktop\\projects\\demo-microservices\\customerwebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0E66D027-3855-48A9-830A-6CA6FF6CBC35}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -32,36 +36,48 @@
               "RelativeDocumentMoniker": "CustomerWebApi\\Program.cs",
               "ToolTip": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\CustomerWebApi\\Program.cs",
               "RelativeToolTip": "CustomerWebApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T01:34:33.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\CustomerWebApi\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "CustomerWebApi\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\CustomerWebApi\\Properties\\launchSettings.json",
-              "RelativeToolTip": "CustomerWebApi\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-22T01:32:56.957Z",
+              "WhenOpened": "2024-08-22T05:09:22.806Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\CustomerWebApi\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "CustomerWebApi\\Controllers\\CustomerController.cs",
-              "ToolTip": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\CustomerWebApi\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "CustomerWebApi\\Controllers\\CustomerController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T01:21:47.846Z",
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-08-22T05:05:00.987Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\CustomerWebApi\\Dockerfile",
+              "RelativeDocumentMoniker": "CustomerWebApi\\Dockerfile",
+              "ToolTip": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\CustomerWebApi\\Dockerfile",
+              "RelativeToolTip": "CustomerWebApi\\Dockerfile",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-22T05:04:30.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\CustomerWebApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "CustomerWebApi\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\CustomerWebApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "CustomerWebApi\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-22T01:32:56.957Z"
             }
           ]
         }
