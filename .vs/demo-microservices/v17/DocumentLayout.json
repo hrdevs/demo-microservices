@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E66D027-3855-48A9-830A-6CA6FF6CBC35}|CustomerWebApi\\CustomerWebApi.csproj|c:\\users\\hp prodesk\\desktop\\projects\\demo-microservices\\customerwebapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E66D027-3855-48A9-830A-6CA6FF6CBC35}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E66D027-3855-48A9-830A-6CA6FF6CBC35}|CustomerWebApi\\CustomerWebApi.csproj|c:\\users\\hp prodesk\\desktop\\projects\\demo-microservices\\customerwebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0E66D027-3855-48A9-830A-6CA6FF6CBC35}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E66D027-3855-48A9-830A-6CA6FF6CBC35}|CustomerWebApi\\CustomerWebApi.csproj|c:\\users\\hp prodesk\\desktop\\projects\\demo-microservices\\customerwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E66D027-3855-48A9-830A-6CA6FF6CBC35}|CustomerWebApi\\CustomerWebApi.csproj|solutionrelative:customerwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\CustomerWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "CustomerWebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\CustomerWebApi\\Program.cs",
+              "RelativeToolTip": "CustomerWebApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T01:34:33.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\CustomerWebApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "CustomerWebApi\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\CustomerWebApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "CustomerWebApi\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-22T01:32:56.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\CustomerWebApi\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "CustomerWebApi\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\HP Prodesk\\Desktop\\Projects\\demo-microservices\\CustomerWebApi\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "CustomerWebApi\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T01:21:47.846Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

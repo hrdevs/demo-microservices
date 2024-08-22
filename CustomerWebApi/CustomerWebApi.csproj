@@ -4,11 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>8789b722-e251-463e-9b6a-2f1ea1c4ceef</UserSecretsId>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
