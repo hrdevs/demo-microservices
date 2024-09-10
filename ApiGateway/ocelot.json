@@ -1,0 +1,132 @@
+{
+  "Routes": [
+    //Customer WEB API
+    {
+      "UpstreamPathTemplate": "/api/customers",
+      "UpstreamHttpMethod": [ "Get" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "customerwebapi",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/customers"
+    },
+    {
+      "UpstreamPathTemplate": "/api/customer",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "customerwebapi",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/customer"
+    },
+    {
+      "UpstreamPathTemplate": "/api/customer/{customerId}",
+      "UpstreamHttpMethod": [ "Get", "Delete" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "customerwebapi",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/customer/{customerId}"
+    },
+    //Customer WEB API
+
+    //Product WEB API
+    {
+      "UpstreamPathTemplate": "/api/products",
+      "UpstreamHttpMethod": [ "Get" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "productwebapi",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/products"
+    },
+    {
+      "UpstreamPathTemplate": "/api/product",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "productwebapi",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/product"
+    },
+    {
+      "UpstreamPathTemplate": "/api/product/{productId}",
+      "UpstreamHttpMethod": [ "Get", "Delete" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "productwebapi",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/product/{productId}"
+    },
+    //Product WEB API
+
+    //Order WEB API
+    {
+      "UpstreamPathTemplate": "/api/orders",
+      "UpstreamHttpMethod": [ "Get" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "orderwebapi",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/orders"
+    },
+    {
+      "UpstreamPathTemplate": "/api/order",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "orderwebapi",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/order"
+    },
+    {
+      "UpstreamPathTemplate": "/api/order/{orderId}",
+      "UpstreamHttpMethod": [ "Get", "Delete" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "orderwebapi",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/order/{orderId}"
+    }
+    //Order WEB API
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:800"
+  }
+}
