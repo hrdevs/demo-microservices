@@ -21,8 +21,8 @@ services:
       dockerfile: CustomerWebApi/Dockerfile
     networks:
         - backend
-    ports:
-        - 8002:8080
+    # ports:
+    #     - 8002:8080
     environment:
         - DB_HOST=customerdb
         - DB_NAME=dms_customer
@@ -46,8 +46,8 @@ services:
       dockerfile: ProductWebApi/Dockerfile
     networks:
         - backend
-    ports:
-        - 8004:8080
+    # ports:
+    #     - 8004:8080
     environment:
         - DB_HOST=productdb
         - DB_NAME=dms_product
@@ -67,10 +67,22 @@ services:
     build:
       context: .
       dockerfile: OrderWebApi/Dockerfile
-    ports:
-        - 8006:8080
+    # ports:
+    #     - 8006:8080
     networks:
         - backend
     environment:
         - DB_HOST=orderdb
         - DB_NAME=dms_order
+
+  apigateway:
+    container_name: api-gateway
+    image: ${DOCKER_REGISTRY-}apigateway
+    build:
+      context: .
+      dockerfile: ApiGateway/Dockerfile
+    ports:
+        - 8007:8080
+    networks:
+        - backend
+
