@@ -8,7 +8,7 @@ namespace JwtAuthenticationManager
 {
     public class JwtTokenHandler
     {
-        public const string JWT_SECURITY_KEY = "Not_So_Strong_Security_Key";
+        public const string JWT_SECURITY_KEY = "u2HkhXmT9ZlPH8M2vFv4hnlM3SfpRtTDfC4H1mn0H20";
         private const int JWT_TOKEN_VALIDITY_MINS = 20;
         private readonly List<UserAccount> _userAccounts;
 
