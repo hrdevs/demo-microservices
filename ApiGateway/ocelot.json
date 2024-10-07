@@ -124,7 +124,14 @@
           "Port": 8080
         }
       ],
-      "DownstreamPathTemplate": "/api/orders"
+      "DownstreamPathTemplate": "/api/orders",
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "60s",
+        "PeriodTimespan": 60,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/order",
@@ -137,7 +144,14 @@
           "Port": 8080
         }
       ],
-      "DownstreamPathTemplate": "/api/order"
+      "DownstreamPathTemplate": "/api/order",
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "60s",
+        "PeriodTimespan": 60,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/order/{orderId}",
