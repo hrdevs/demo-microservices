@@ -32,10 +32,17 @@ namespace JwtAuthenticationManager
 
             var tokenExpiryTimeStamp = DateTime.Now.AddMinutes(JWT_TOKEN_VALIDITY_MINS);
             var tokenKey = Encoding.ASCII.GetBytes(JWT_SECURITY_KEY);
+            //var claimsIdentity = new ClaimsIdentity(new List<Claim>
+            //{
+            //    new Claim(JwtRegisteredClaimNames.Name, authenticationRequest.UserName),
+            //    new Claim(ClaimTypes.Role, userAccount.Role)
+            //});
+
+            //If used in ocelot configuration file
             var claimsIdentity = new ClaimsIdentity(new List<Claim>
             {
                 new Claim(JwtRegisteredClaimNames.Name, authenticationRequest.UserName),
-                new Claim(ClaimTypes.Role, userAccount.Role)
+                new Claim("Role", userAccount.Role)
             });
 
             var signingCredentials = new SigningCredentials(
