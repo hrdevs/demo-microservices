@@ -75,6 +75,32 @@ services:
         - DB_HOST=orderdb
         - DB_NAME=dms_order
 
+  accountdb:
+    container_name: account-db
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+        - ACCEPT_EULA=Y
+        - SA_PASSWORD=P@ssword
+    networks:
+        - backend
+    ports:
+        - 8007:1433
+
+  accountwebapi:
+    container_name: account-api
+    image: ${DOCKER_REGISTRY-}accountwebapi
+    build:
+      context: .
+      dockerfile: AccountWebApi/Dockerfile
+    networks:
+        - backend
+    # ports:
+    #     - 8007:8080
+    environment:
+        - DB_HOST=accountdb
+        - DB_NAME=dms_account
+        - DB_SA_PASSWORD=P@ssword 
+
   apigateway:
     container_name: api-gateway
     image: ${DOCKER_REGISTRY-}apigateway
@@ -82,17 +108,7 @@ services:
       context: .
       dockerfile: ApiGateway/Dockerfile
     ports:
-        - 8007:8080
-    networks:
-        - backend
-
-
-  authenticationwebapi:
-    container_name: authentication-api
-    image: ${DOCKER_REGISTRY-}authenticationwebapi
-    build:
-      context: .
-      dockerfile: AuthenticationWebApi/Dockerfile
+        - 8008:8080
     networks:
         - backend
 

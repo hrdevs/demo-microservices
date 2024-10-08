@@ -6,7 +6,7 @@
       "serviceActions": {
         "customerwebapi": "StartDebugging",
         "apigateway": "StartDebugging",
-        "authenticationwebapi": "StartDebugging"
+        "accountwebapi": "StartDebugging"
       }
     }
   }

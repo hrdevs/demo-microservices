@@ -10,25 +10,15 @@ namespace JwtAuthenticationManager
     {
         public const string JWT_SECURITY_KEY = "u2HkhXmT9ZlPH8M2vFv4hnlM3SfpRtTDfC4H1mn0H20";
         private const int JWT_TOKEN_VALIDITY_MINS = 20;
-        private readonly List<UserAccount> _userAccounts;
 
         public JwtTokenHandler()
         {
-            _userAccounts = new List<UserAccount>()
-            {
-                new UserAccount() { UserName = "admin", Password = "admin123", Role = "Administrator" },
-                new UserAccount() { UserName = "user01", Password = "user01", Role = "User" }
-            };
         }
 
-        public AuthenticationResponse? GenerateJwtToken(AuthenticationRequest authenticationRequest)
+        public AuthenticationResponse? GenerateJwtToken(string userName, string role)
         {
-            if (string.IsNullOrEmpty(authenticationRequest.UserName) || string.IsNullOrEmpty(authenticationRequest.Password))
+            if (string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(role))
                 return null;
-
-            //Validation
-            var userAccount = _userAccounts.Where(x => x.UserName == authenticationRequest.UserName && x.Password == authenticationRequest.Password).FirstOrDefault();
-            if (userAccount == null) return null;
 
             var tokenExpiryTimeStamp = DateTime.Now.AddMinutes(JWT_TOKEN_VALIDITY_MINS);
             var tokenKey = Encoding.ASCII.GetBytes(JWT_SECURITY_KEY);
@@ -41,8 +31,8 @@ namespace JwtAuthenticationManager
             //If used in ocelot configuration file
             var claimsIdentity = new ClaimsIdentity(new List<Claim>
             {
-                new Claim(JwtRegisteredClaimNames.Name, authenticationRequest.UserName),
-                new Claim("Role", userAccount.Role)
+                new Claim(JwtRegisteredClaimNames.Name, userName),
+                new Claim("Role", role)
             });
 
             var signingCredentials = new SigningCredentials(
@@ -62,7 +52,7 @@ namespace JwtAuthenticationManager
 
             return new AuthenticationResponse
             {
-                UserName = authenticationRequest.UserName,
+                UserName = userName,
                 ExpiresIn = (int)tokenExpiryTimeStamp.Subtract(DateTime.Now).TotalSeconds,
                 JwtToken = token,
             };

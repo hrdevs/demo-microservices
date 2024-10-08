@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGateway", "ApiGateway\Ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JwtAuthenticationManager", "JwtAuthenticationManager\JwtAuthenticationManager.csproj", "{EF8ED5F8-5781-4125-B89B-4404F93DD350}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationWebApi", "AuthenticationWebApi\AuthenticationWebApi.csproj", "{D1C5A0D7-C731-48EA-94A3-D6E2259D17A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountWebApi", "AccountWebApi\AccountWebApi.csproj", "{D1C5A0D7-C731-48EA-94A3-D6E2259D17A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

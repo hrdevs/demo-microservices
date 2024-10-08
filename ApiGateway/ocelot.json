@@ -1,19 +1,68 @@
 {
   "Routes": [
-    //Authentication WEB API
+    //Account WEB API
     {
-      "UpstreamPathTemplate": "/api/account",
+      "UpstreamPathTemplate": "/api/account/authenticate",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "authenticationwebapi",
+          "Host": "accountwebapi",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/account/authenticate"
+    },
+    {
+      "UpstreamPathTemplate": "/api/account/register",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "accountwebapi",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/account/register"
+    },
+    {
+      "UpstreamPathTemplate": "/api/accounts",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "accountwebapi",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/accounts"
+    },
+    {
+      "UpstreamPathTemplate": "/api/account",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "accountwebapi",
           "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/account"
     },
-    //Authentication WEB API
+    {
+      "UpstreamPathTemplate": "/api/account/{accountId}",
+      "UpstreamHttpMethod": [ "Get", "Delete" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "accountwebapi",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/account/{accountId}"
+    },
+    //Account WEB API
     //Customer WEB API
     {
       "UpstreamPathTemplate": "/api/customers",
