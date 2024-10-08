@@ -11,20 +11,20 @@ EXPOSE 8080
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["AuthenticationWebApi/AuthenticationWebApi.csproj", "AuthenticationWebApi/"]
+COPY ["AccountWebApi/AccountWebApi.csproj", "AccountWebApi/"]
 COPY ["JwtAuthenticationManager/JwtAuthenticationManager.csproj", "JwtAuthenticationManager/"]
-RUN dotnet restore "./AuthenticationWebApi/AuthenticationWebApi.csproj"
+RUN dotnet restore "./AccountWebApi/AccountWebApi.csproj"
 COPY . .
-WORKDIR "/src/AuthenticationWebApi"
-RUN dotnet build "./AuthenticationWebApi.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/AccountWebApi"
+RUN dotnet build "./AccountWebApi.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./AuthenticationWebApi.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./AccountWebApi.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 # This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "AuthenticationWebApi.dll"]
+ENTRYPOINT ["dotnet", "AccountWebApi.dll"]
